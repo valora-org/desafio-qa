@@ -10,7 +10,7 @@ Nesse desafio iremos avaliar suas habilidades em:
 * **Postman**
 * **Selenium**
 
-## Selenium
+## Postman
 
 No dia-a-dia de trabalho uma de suas atribuições será validar a API do nosso produto. Portanto, vamos testar seu domínio do Postman e sua capacidade de interpretar e descrever um caso de uso.
 
@@ -23,7 +23,7 @@ Por exemplo:
 * Documente o **cenário** e o **retorno esperado**
 * Crie a **request**
 
-## Automação
+## Automação (Selenium)
 
 Outra habilidade importante para este cargo é a automação de testes e2e. Recomendamos a utilização da stack **Python+Selenium+Behave+Nose** porém, sinta-se à vontade para utilizar outra de sua preferência.
 
