@@ -1,0 +1,4 @@
+Olá, me chamo Carlos.
+Utilizei métodos simples que cumprem as solicitações e retorna ao usuário de forma simples as respostas.
+O link do meu repositório: https://github.com/Vinextt/Teste-Valora
+Linkedin: https://www.linkedin.com/in/carlos-vinicius-de-jesus-ti/
