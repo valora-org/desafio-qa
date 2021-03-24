@@ -29,7 +29,7 @@ Status 200 OK
 
 ## Teste automatizado com SELENIUM
 
-Validação da landing page https://valora.cc/
+Validação da landing page https://valora.cc/ utilizando **Python+Selenium+Behave**
 
 Este teste automatizado valida os seguintes cenários:
 
