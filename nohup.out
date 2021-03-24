@@ -1,0 +1,2 @@
+time="2021-03-23T21:22:42.550016500-04:00" level=info msg="Starting up"
+failed to start daemon: pid file found, ensure docker is not running or delete /var/run/docker.pid

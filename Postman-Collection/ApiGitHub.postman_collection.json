@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "8622d6d7-92a0-4f9c-a5cf-9eb59efe04f6",
+		"name": "ApiGitHub",
+		"description": "# Introdução\nObter informações de um repositório no GitHub, bem como a lista de commits e forks deste repositório.\n\n# Resultado\nO resultado esperado para as requisições desta coleção são as informações do repositório do Kernel do Linux, bem como a lista de commits e forks deste repositório\n\n# Teste de Verificação\nStatus 200 OK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET_REPOSITORY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/repos/{{owner}}/{{repo}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"repos",
+						"{{owner}}",
+						"{{repo}}"
+					]
+				},
+				"description": "Obter informações de um repositório GitHub"
+			},
+			"response": []
+		},
+		{
+			"name": "GET_FORKS_REPOSITORY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/repos/{{owner}}/{{repo}}/forks",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"repos",
+						"{{owner}}",
+						"{{repo}}",
+						"forks"
+					]
+				},
+				"description": "Obter lista de Forks de um repositório GitHub"
+			},
+			"response": []
+		},
+		{
+			"name": "GET_COMMITS_REPOSITORY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/repos/{{owner}}/{{repo}}/commits",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"repos",
+						"{{owner}}",
+						"{{repo}}",
+						"commits"
+					]
+				},
+				"description": "Obter lista de Commits de um repositório GitHub"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "username",
+				"value": "",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Status code is 200\", function () {",
+					"    pm.response.to.have.status(200);",
+					"});"
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://api.github.com"
+		},
+		{
+			"key": "owner",
+			"value": "torvalds"
+		},
+		{
+			"key": "repo",
+			"value": "linux"
+		}
+	]
+}
